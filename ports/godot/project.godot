@@ -1,0 +1,28 @@
+; Living Room VR - Godot 4 project
+config_version=5
+
+[application]
+
+config/name="Living Room VR"
+config/description="120 Blender-baked living rooms. Walk around and do the chores."
+run/main_scene="res://main.tscn"
+config/features=PackedStringArray("4.4")
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/aspect="expand"
+window/handheld/orientation=4
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=false
+
+[rendering]
+
+renderer/rendering_method="forward_plus"
+renderer/rendering_method.mobile="mobile"
+textures/vram_compression/import_etc2_astc=true
+anti_aliasing/quality/msaa_3d=1

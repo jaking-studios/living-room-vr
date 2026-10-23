@@ -8,8 +8,26 @@
 Walk through each house and get it guest-ready: put the pillows back, reshelve the books, straighten the art, vacuum, water the plants and take out the trash.
 
 <p align="center">
-  <a href="https://jaineil32624.github.io/living-room-vr/"><b>▶ Play in your browser / Meta Quest</b></a> &nbsp;·&nbsp;
-  <a href="https://github.com/jaineil32624/living-room-vr/archive/refs/heads/main.zip"><b>⬇ Download everything (ZIP)</b></a>
+  <a href="https://jaineil32624.github.io/living-room-vr/"><b>▶ Play in your browser / Meta Quest</b></a>
+</p>
+
+## ⬇ Downloads
+
+| Get it for | File | What to do |
+|---|---|---|
+| 🌐 **Website** (any device) | [Play online](https://jaineil32624.github.io/living-room-vr/) | Nothing to install — works on PC, phones, Quest, TV browsers |
+| 🤖 **Android phone / tablet (APK)** | [LivingRoomVR.apk](https://github.com/jaineil32624/living-room-vr/releases/latest/download/LivingRoomVR.apk) | Open on the device → allow "install unknown apps" → install. Runs fully offline |
+| 🪟 **Windows game** (Unity build) | [LivingRoomVR-Windows.zip](https://github.com/jaineil32624/living-room-vr/releases/latest/download/LivingRoomVR-Windows.zip) | Unzip → double-click `LivingRoomVR.exe` |
+| 🎮 **Unity 6 project** | [LivingRoomVR-Unity-Project.zip](https://github.com/jaineil32624/living-room-vr/releases/latest/download/LivingRoomVR-Unity-Project.zip) | Unzip → Unity Hub → *Add project from disk* → open `Assets/LivingRoomVR/Main.unity` → Play |
+| 🧩 **Godot 4 project** | [LivingRoomVR-Godot-Project.zip](https://github.com/jaineil32624/living-room-vr/releases/latest/download/LivingRoomVR-Godot-Project.zip) | Unzip → Godot 4.4+ → *Import* `project.godot` → F5 |
+| 💾 **Website, offline copy** | [LivingRoomVR-Web.zip](https://github.com/jaineil32624/living-room-vr/releases/latest/download/LivingRoomVR-Web.zip) | Unzip → double-click `Play on this PC.bat` |
+
+All downloads are on the [Releases page](https://github.com/jaineil32624/living-room-vr/releases/latest). Every version contains all 120 rooms with the Cycles-baked lighting.
+
+<p align="center">
+  <img src="docs/screens/unity.jpg" width="49%" alt="Unity version">
+  <img src="docs/screens/android.jpg" width="49%" alt="Android APK">
+  <br><sub>Left: Unity 6 Windows build · Right: Android APK</sub>
 </p>
 
 Works on **Meta Quest & PC VR** (WebXR), **PC/Mac** (keyboard + mouse), **phones & tablets** (touch), **Xbox / PlayStation / Switch controllers**, and **smart-TV browsers** (remote arrow keys).
@@ -145,6 +163,9 @@ URL shortcuts: `?house=7` starts house 7, `?room=LR045` loads one room.
 | `lib/` | Three.js, Draco decoder, three-mesh-bvh (bundled, works offline) |
 | `docs/screens/` | Images used in this README |
 | `Play on this PC.bat` | Runs a local server with Blender's Python and opens the game |
+| `ports/unity/` | Unity 6 source (glTFast loader, lightmap shaders, chores, HUD). Rooms ship in the Unity download |
+| `ports/godot/` | Godot 4 source (GDScript + shaders). Rooms ship in the Godot download |
+| `ports/android/` | Android app that wraps the web game offline (`build_apk.bat` rebuilds the APK) |
 
 ## Run it yourself
 
@@ -165,4 +186,4 @@ About 25–30 s per room on an RTX 5080.
 
 ## Console stores
 
-Native PlayStation / Xbox / Nintendo releases need an approved developer account with each platform (PlayStation Partners, ID@Xbox, Nintendo Developer Portal) plus their dev kits and certification. The `.glb` rooms import directly into Unity, Godot or Unreal, which is the usual route to those stores.
+Native PlayStation / Xbox / Nintendo releases need an approved developer account with each platform (PlayStation Partners, ID@Xbox, Nintendo Developer Portal) plus their dev kits and certification. The Unity and Godot projects above are the starting point for that — both engines export to Xbox, PlayStation and Switch once you have the platform's developer access.

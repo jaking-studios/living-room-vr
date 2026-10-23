@@ -1,0 +1,5 @@
+{
+  "name": "LivingRoomVR.Runtime",
+  "references": ["glTFast"],
+  "autoReferenced": true
+}

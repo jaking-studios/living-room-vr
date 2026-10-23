@@ -1,0 +1,30 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.jaineil.livingroomvr'
+    compileSdk 36
+    defaultConfig {
+        applicationId 'com.jaineil.livingroomvr'
+        minSdk 26
+        targetSdk 36
+        versionCode 1
+        versionName '1.0'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.debug   // sideload-ready; use your own keystore for the Play Store
+        }
+    }
+    androidResources {
+        noCompress += ['glb', 'jpg', 'wasm', 'json']
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'androidx.webkit:webkit:1.12.1'
+}

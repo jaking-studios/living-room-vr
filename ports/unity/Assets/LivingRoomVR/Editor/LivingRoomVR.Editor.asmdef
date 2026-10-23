@@ -1,0 +1,5 @@
+{
+  "name": "LivingRoomVR.Editor",
+  "references": ["LivingRoomVR.Runtime"],
+  "includePlatforms": ["Editor"]
+}
