@@ -1,0 +1,10 @@
+{
+  "name": "Living Room VR",
+  "short_name": "LivingRoomVR",
+  "start_url": "./index.html",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#14110f",
+  "theme_color": "#14110f",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
